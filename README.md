@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+#This is not fully responsive yet. Best view 1920px
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
