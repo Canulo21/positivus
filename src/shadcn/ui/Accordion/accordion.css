@@ -1,0 +1,39 @@
+.accordion-btn {
+  box-shadow: 0 5px 0 0 #191a23;
+  top: 0;
+  position: relative;
+}
+.accordion-btn:hover {
+  top: -10px;
+  box-shadow: 0 10px 0 0 #191a23;
+}
+.accordion-btn svg {
+  display: none;
+}
+.accordion-btn button {
+  position: relative;
+}
+.accordion-btn [data-state="open"] button::after {
+  content: "-";
+  font-size: 50px;
+  align-items: baseline;
+  line-height: 100%;
+}
+.accordion-btn button::after {
+  content: "+";
+  background: #f3f3f3;
+  border: 1px solid #191a23;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 40px;
+  width: 58px;
+  height: 58px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,22 @@
+.arrow-left svg,
+.arrow-right svg {
+  display: none;
+}
+.arrow-left,
+.arrow-right {
+  height: 24px;
+  width: 24px;
+  border: none;
+}
+.arrow-left {
+  background: url(../../../assets/images/arrow-left.png) no-repeat;
+}
+.arrow-left:hover {
+  background: url(../../../assets/images/arrow-left-hover.png) no-repeat;
+}
+.arrow-right {
+  background: url(../../../assets/images/arrow-right.png) no-repeat;
+}
+.arrow-right:hover {
+  background: url(../../../assets/images/arrow-right-hover.png) no-repeat;
+}
