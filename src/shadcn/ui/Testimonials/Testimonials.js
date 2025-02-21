@@ -150,6 +150,7 @@ const CarouselPrevious = React.forwardRef(
     const { orientation, scrollPrev, canScrollPrev } = useCarousel();
     return (
       <Button
+        aria-label="arrow-prev"
         ref={ref}
         variant={variant}
         size={size}
@@ -170,6 +171,7 @@ const CarouselNext = React.forwardRef(
     const { orientation, scrollNext, canScrollNext } = useCarousel();
     return (
       <Button
+        aria-label="arrow-next"
         ref={ref}
         variant={variant}
         size={size}

@@ -490,6 +490,7 @@ function Home() {
                 <div className="flex justify-center space-x-2 mx-56">
                   {testimonialSLides.map((_, index) => (
                     <button
+                      aria-label="dot"
                       key={index}
                       onClick={() => goToSlide(index)}
                       className={`w-3 h-3 rounded-full transition-colors dots ${
