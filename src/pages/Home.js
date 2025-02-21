@@ -217,7 +217,7 @@ const testimonialSLides = [
 ];
 
 function Home() {
-  const plugin = useRef(Autoplay({ delay: 99999999, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
 
   const [api, setApi] = useState(null); // State to hold the Carousel API
   const [currentIndex, setCurrentIndex] = useState(0);
