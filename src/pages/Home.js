@@ -419,7 +419,7 @@ function Home() {
             {teamCard.map((team, i) => {
               return (
                 <div
-                  className="team-card border-[1px] border-[#191A23] rounded-[45px] w-[calc(33.333%_-_15px)] lg:w-[calc(50%_-_15px)] xl:w-[calc(33.333%_-_15px)] 2xl:w-[calc(33.333%_-_20px)] py-8 px-7 xl:py-8 xl:px-7 2xl:py-10 2xL:px-9 common-shadow top-hover"
+                  className="team-card border-[1px] border-[#191A23] rounded-[45px] w-[calc(50%_-_15px)] lg:w-[calc(50%_-_15px)] xl:w-[calc(33.333%_-_15px)] 2xl:w-[calc(33.333%_-_20px)] py-8 px-7 xl:py-8 xl:px-7 2xl:py-10 2xL:px-9 common-shadow top-hover"
                   key={i}
                 >
                   <div className="top-card flex relative items-end border-b-[1px] border-black pb-7">
