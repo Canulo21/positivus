@@ -7,11 +7,7 @@ function Footer() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 150) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 150);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,6 +16,12 @@ function Footer() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleBackToTop = (event) => {
+    event.preventDefault(); // Prevents "#" from appearing in the URL
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <footer>
@@ -77,7 +79,7 @@ function Footer() {
       </footer>
 
       <div className={`back-top fixed ${scrolled ? "show" : ""}`}>
-        <a href="#">
+        <a href="#" onClick={handleBackToTop}>
           <img src={backTop} alt="back-top" />
         </a>
       </div>
