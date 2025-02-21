@@ -25,16 +25,16 @@ function Footer() {
   return (
     <>
       <footer>
-        <div className="px-[100px]">
-          <div className="footer-wrap bg-[#191A23] text-white pt-[55px] pb-[50px] px-[60px] rounded-t-[40px] mt-36">
+        <div className="px-10 xl:px-12 2xl:px-[100px]">
+          <div className="footer-wrap bg-[#191A23] text-white pt-[55px] pb-[50px] px-[40px] 2xl:pt-[55px] 2xl:pb-[50px] 2xl:px-[60px] rounded-t-[40px] mt-24 xl:mt-36">
             <div className="footer-menu-wrap">
               <FooterNav />
             </div>
             <div
-              className="footer-contact-info flex justify-between pt-[66px] pb-[50px]"
+              className="footer-contact-info flex flex-wrap justify-between pt-[66px] pb-[50px]"
               style={{ alignItems: "normal" }}
             >
-              <div className="footer-contact-left">
+              <div className="footer-contact-left w-[40%] xl:w-[40%]">
                 <h4 className="bg-[#B9FF66] rounded-[14px] inline-block text-black font-medium px-2 mb-[27px]">
                   Contact us:
                 </h4>
@@ -47,10 +47,10 @@ function Footer() {
                   </p>
                 </div>
               </div>
-              <div className="footer-contact-right w-[45%] ">
-                <div className="bg-[#292A32] rounded-[14px] h-full py-14 px-10 flex justify-between items-center">
+              <div className="footer-contact-right w-[40%] xl:w-[55%] 2xl:w-fit">
+                <div className="bg-[#292A32] rounded-[14px] justify-center flex-col xl:flex-row h-full py-10 px-6 xl:py-12 xl:px-8 2xl:py-14 2xl:px-10 flex gap-5 xl:gap-5 2xl:gap-24 items-center">
                   <input
-                    className="border-2 border-white bg-transparent py-5 px-10 rounded-[14px]"
+                    className="border-2 border-white bg-transparent text-center xl:text-left w-full xl:w-[initial] py-3 px-7 xl:py-3 xl:px-5 2xl:py-5 2xl:px-10 rounded-[14px]"
                     type="email"
                     name="email"
                     id=""
@@ -58,7 +58,7 @@ function Footer() {
                   />
                   <a
                     href="#"
-                    className="rounded-[14px] border inline-block py-5 px-9 bg-[#B9FF66] text-[#292A32] text-[20px] hover:bg-[#292A32] hover:text-white hover:border-[#B9FF66]"
+                    className="rounded-[14px] border w-full xl:w-[initial] inline-block py-3 px-7 xl:py-3 xl:px-5 2xl:py-5 2xl:px-9 bg-[#B9FF66] text-[#292A32] text-center text-[20px] hover:bg-[#292A32] hover:text-white hover:border-[#B9FF66]"
                   >
                     Subscribe to news
                   </a>

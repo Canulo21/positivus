@@ -25,18 +25,18 @@ function Nav() {
   return (
     <>
       <div
-        className={`fixed w-full h-36 bg-white top-0 flex z-50 border-t-8 border-[#B9FF66] masthead ${
+        className={`fixed w-full h-24 lg:h-28 xl:h-36 2xl:h-36 bg-white top-0 flex z-50 border-t-8 border-[#B9FF66] masthead ${
           scrolled ? "gsticky" : ""
         }`}
       >
-        <div className="nav-holder flex items-center justify-between px-[100px] w-full">
+        <div className="nav-holder flex items-center justify-between px-10 xl:px-12 2xl:px-[100px] w-full">
           <a href="#" className=" logo flex gap-3">
             <img src={logo} alt="logo" />
             <img src={logoText} alt="Positivus" />
           </a>
 
-          <div className="menu">
-            <ul className="flex gap-10 items-center">
+          <div className="menu hidden lg:hidden xl:block">
+            <ul className="flex xl:gap-2 2xl:gap-10 items-center">
               <li>
                 <NavLink
                   to="/"
@@ -113,7 +113,7 @@ function Nav() {
                 <NavLink
                   to="#"
                   className={({ isActive }) =>
-                    `py-5 px-9 text-[20px] text-black hover:bg-[#B9FF66] border border-[#191A23] rounded-[14px] inline-block ${
+                    `py-3 px-4  xl:py-3 xl:px-4  2xl:py-5 2xl:px-9 text-[20px] text-black hover:bg-[#B9FF66] border border-[#191A23] rounded-[14px] inline-block ${
                       isActive ? "" : "bg-transparent"
                     }`
                   }

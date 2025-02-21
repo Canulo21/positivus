@@ -24,21 +24,6 @@ body {
   -webkit-text-size-adjust: none;
 }
 
-h1 {
-  font-size: 3.75rem;
-  line-height: 1.29;
-}
-h2 {
-  font-size: 2.5rem;
-  line-height: 1.28;
-}
-h3 {
-  font-size: 1.875rem;
-}
-h4 {
-  font-size: 1.25rem;
-}
-
 p {
   font-size: 1.125rem;
   line-height: 1.28;
@@ -106,29 +91,6 @@ input:-internal-autofill-selected {
   transform: rotate(-60deg);
 }
 
-.company-logo-wrap:hover .logo-carousel {
-  animation-play-state: paused;
-}
-.logo-carousel {
-  display: inline-block;
-  white-space: nowrap;
-  /* display: inline-block; */
-  animation: 50s slide infinite linear;
-}
-.logo-carousel img {
-  display: inline-block;
-  margin: 0 75px;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 .top-hover.common-shadow {
   position: relative;
   top: 0;
@@ -193,4 +155,89 @@ input:-internal-autofill-selected {
   background: url(../assets/images/dots.png) no-repeat center center;
   width: 20px;
   height: 20px;
+}
+
+.carousel {
+  scroll-snap-type: none; /* Disable scroll snapping */
+}
+
+.carousel-item {
+  scroll-snap-align: none; /* Disable snapping for individual items */
+}
+.carousel {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+@media only screen and (min-width: 321px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  h1 {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1.29;
+  }
+  h2 {
+    font-size: 2.5rem; /* 40px */
+    line-height: 1.28;
+  }
+  h3 {
+    font-size: 1.875rem; /* 30px */
+  }
+  h4 {
+    font-size: 1.25rem; /* 20px */
+  }
 }

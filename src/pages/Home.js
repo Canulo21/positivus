@@ -248,8 +248,8 @@ function Home() {
   return (
     <>
       <section id="services">
-        <div className="service-wrap pt-36">
-          <div className="service-top flex items-center gap-10 pb-20">
+        <div className="service-wrap pt-20 lg:pt-24 xl:pt-36">
+          <div className="service-top flex items-center gap-10 pb-12 lg:pb-14 xl:pb-20">
             <h2 className="head-title">Services</h2>
             <p>
               At our digital marketing agency, we offer a range of services to{" "}
@@ -257,11 +257,11 @@ function Home() {
               help businesses grow and succeed online. These services include:
             </p>
           </div>
-          <div className="service-card-wrapper flex flex-wrap gap-10">
+          <div className="service-card-wrapper flex flex-wrap gap-7 lg:gap-7 xl:gap-10">
             {serviceCard.map((card, i) => {
               return (
                 <div
-                  className="card border-black border-[1px] rounded-[45px] flex items-center justify-between p-12"
+                  className="card border-black border-[1px] rounded-[45px] flex items-center justify-between p-5 xl:p-9 2xl:p-12"
                   key={i}
                   style={{ background: card.cardBg }}
                 >
@@ -300,9 +300,9 @@ function Home() {
             })}
           </div>
         </div>
-        <div className="lets-wrap pt-24 pb-32">
-          <div className="bg-[#F3F3F3] rounded-[45px] relative flex items-center justify-between p-14">
-            <div className="left-lets w-[40%]">
+        <div className="lets-wrap pt-24 pb-20 lg:pb-20 xl:pb-32">
+          <div className="bg-[#F3F3F3] rounded-[45px] relative flex items-center justify-between p-9 xl:p-14">
+            <div className="left-lets pr-16 lg:pr-20 w-[55%] lg:w-[60%] 2xl:w-[40%]">
               <h3>Let’s make things happen</h3>
               <p className="my-7">
                 Contact us today to learn more about how our digital marketing
@@ -319,22 +319,22 @@ function Home() {
               <img
                 src={lets}
                 alt="lets-img"
-                className="absolute top-0 right-60 bottom-0 m-auto"
+                className="absolute top-0 right-10  2xl:right-60 bottom-0 m-auto"
               />
             </div>
           </div>
         </div>
-        <div className="case-wrap pb-32">
-          <div className="case-top flex items-center gap-10 pb-20">
+        <div className="case-wrap pb-20 lg:pb-20 xl:pb-32">
+          <div className="case-top flex items-center gap-10 pb-12 lg:pb-14 xl:pb-20">
             <h2 className="head-title">Case Studies</h2>
             <p>
               Explore Real-Life Examples of Our Proven Digital Marketing <br />{" "}
               Success through Our Case Studies
             </p>
           </div>
-          <div className="case-btm bg-[#191A23] rounded-[45px] py-[70px] px-14 text-white">
+          <div className="case-btm bg-[#191A23] rounded-[45px]  py-10 px-10 xl:py-12 xl:px-10 2xL:py-[70px] 2xl:px-14 text-white">
             <div className="flex">
-              <div className="pr-16">
+              <div className=" pr-6 xl:pr-8 2xl:pr-16">
                 <p>
                   For a local restaurant, we implemented a targeted PPC campaign
                   that resulted in a 50% increase in website traffic and a 25%
@@ -348,7 +348,7 @@ function Home() {
                   <img src={arrow3} alt="arrow-link" />
                 </a>
               </div>
-              <div className="border-l-2 border-r-2 border-white px-16">
+              <div className="border-l-2 border-r-2 border-white px-6 xl:px-9 2xl:px-16">
                 <p>
                   For a B2B software company, we developed an SEO strategy that
                   resulted in a first page ranking for key keywords and a 200%
@@ -362,7 +362,7 @@ function Home() {
                   <img src={arrow3} alt="arrow-link" />
                 </a>
               </div>
-              <div className="pl-16">
+              <div className="pl-6 xl:pl-8 2xl:pl-16">
                 <p>
                   For a national retail chain, we created a social media
                   marketing campaign that increased followers by 25% and
@@ -379,8 +379,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="working-process-wrap pb-28">
-          <div className="working-top flex items-center gap-10 pb-20">
+        <div className="working-process-wrap pb-14 xl:pb-28">
+          <div className="working-top flex items-center gap-10 pb-12 lg:pb-14 xl:pb-20">
             <h2 className="head-title">Our Working Process </h2>
             <p>
               Step-by-Step Guide to Achieving <br />
@@ -393,8 +393,12 @@ function Home() {
                 return (
                   <AccordionItem value={`item-${i}`} key={i} className="mb-8">
                     <AccordionTrigger>
-                      <span className="text-6xl w-28">{process.number}</span>
-                      <span className="text-3xl">{process.title}</span>
+                      <span className=" w-20 text-3xl lg:w-20 lg:text-5xl xl:text-6xl xl:w-28">
+                        {process.number}
+                      </span>
+                      <span className="text-2xl xl:text-3xl">
+                        {process.title}
+                      </span>
                     </AccordionTrigger>
                     <AccordionContent>{process.text}</AccordionContent>
                   </AccordionItem>
@@ -404,18 +408,18 @@ function Home() {
           </div>
         </div>
         <div className="team-wrap pb-28">
-          <div className="team-top flex items-center gap-10 pb-20">
+          <div className="team-top flex items-center gap-10 pb-12 lg:pb-14 xl:pb-20">
             <h2 className="head-title">Team</h2>
             <p>
               Meet the skilled and experienced team behind our <br />
               successful digital marketing strategies
             </p>
           </div>
-          <div className="team-card-holder flex flex-wrap justify-between gap-y-10">
+          <div className="team-card-holder flex flex-wrap justify-between gap-y-6 xl:gap-y-6 2xl:gap-y-10">
             {teamCard.map((team, i) => {
               return (
                 <div
-                  className="team-card border-[1px] border-[#191A23] rounded-[45px] w-[calc(33.333%_-_20px)] py-10 px-9 common-shadow top-hover"
+                  className="team-card border-[1px] border-[#191A23] rounded-[45px] w-[calc(33.333%_-_15px)] lg:w-[calc(50%_-_15px)] xl:w-[calc(33.333%_-_15px)] 2xl:w-[calc(33.333%_-_20px)] py-8 px-7 xl:py-8 xl:px-7 2xl:py-10 2xL:px-9 common-shadow top-hover"
                   key={i}
                 >
                   <div className="top-card flex relative items-end border-b-[1px] border-black pb-7">
@@ -447,7 +451,7 @@ function Home() {
           </div>
         </div>
         <div className="testimonials-wrap">
-          <div className="working-top flex items-center gap-10 pb-20">
+          <div className="working-top flex items-center gap-10 pb-12 lg:pb-14 xl:pb-20">
             <h2 className="head-title">Testimonials</h2>
             <p>
               Hear from Our Satisfied Clients: Read Our Testimonials <br />
@@ -468,10 +472,10 @@ function Home() {
                   return (
                     <CarouselItem
                       key={i}
-                      className="pl-1 md:basis-1/2 w-1/2 cursor-grab"
+                      className="pl-1 w-3/4 basis-3/4 sm:basis-3/4 sm:w-3/4 md:basis-3/4 md:w-3/4 lg:basis-3/4 lg:w-3/4 xl:basis-1/2 xl:w-1/2 cursor-grab"
                     >
                       <div className="p-1">
-                        <div className="message border-[1px] border-[#B9FF66] rounded-[45px] py-10 px-14 mb-2">
+                        <div className="message border-[1px] border-[#B9FF66] rounded-[45px] py-9 px-6 xl:py-10 xl:px-14 mb-2">
                           {testimony.testimony}
                         </div>
                       </div>
@@ -485,7 +489,7 @@ function Home() {
                   );
                 })}
               </CarouselContent>
-              <div className="testimonials-btns flex items-center justify-center pt-32">
+              <div className="testimonials-btns flex items-center justify-center pt-20 xl:pt-32">
                 <CarouselPrevious />
                 <div className="flex justify-center space-x-2 mx-56">
                   {testimonialSLides.map((_, index) => (

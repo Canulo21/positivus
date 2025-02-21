@@ -5,15 +5,15 @@ import CompanyLogo from "../CompanyLogo/CompanyLogo";
 function HeroBanner() {
   return (
     <>
-      <div className="hero-container flex items-center py-[70px] mt-36">
-        <div className="hero-left w-[62%]">
+      <div className="hero-container flex flex-wrap items-center pb-[100px] xl:pb-[70px] py-[70px] mt-24 lg-mt-28 xl:mt-36 2xl:mt-36">
+        <div className="hero-left pr-8 lg:w-[60%] xl:w-[50%] 2xl:w-[42%]">
           <div className="hero-title">
             <h1 className="font-semibold">
               Navigating the digital landscape for success
             </h1>
           </div>
           <div className="hero-text">
-            <p className="py-9">
+            <p className="py-5 lg:py-6 xl:py-8 2xl:py-9">
               Our digital marketing agency helps businesses grow and succeed
               online through a range of services including SEO, PPC, social
               media marketing, and content creation.
@@ -26,7 +26,7 @@ function HeroBanner() {
             </a>
           </div>
         </div>
-        <div className="hero-right w-full flex justify-end">
+        <div className="hero-right w-full flex justify-end lg:w-[40%] xl:w-[50%] 2xl:w-[58%]">
           <img src={heroImg} alt="Illustration" />
         </div>
       </div>
