@@ -14,7 +14,7 @@ function FooterNav() {
         <img src={footerLogoText} alt="Positivus" />
       </a>
       <div className="menu">
-        <ul className="flex gap-2 xl:gap-2 2xl:gap-10 items-center">
+        <ul className="flex flex-col lg:flex-row gap-2 xl:gap-2 2xl:gap-10 items-center">
           <li>
             <NavLink
               to="/"

@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <Nav />
       </header>
-      <div className="px-10 xl:px-12 2xl:px-[100px]">
+      <div className="px-3 lg:px-10 xl:px-12 2xl:px-[100px]">
         <HeroBanner />
         {/* pages here */}
         <Home />

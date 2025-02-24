@@ -88,7 +88,7 @@ function CompanyLogo() {
             {logoImages.map((logo, i) => (
               <CarouselItem
                 key={i}
-                className="md:basis-1/3 md:w-1/3 lg:basis-1/4 lg:w-1/4 2xl:basis-1/6  2xl:w-1/6 w-1/2 flex justify-center cursor-grab"
+                className="basis-1/3 w-1/3 sm:basis-1/3 sm:w-1/3 lg:basis-1/4 lg:w-1/4 2xl:basis-1/6  2xl:w-1/6 flex justify-center cursor-grab"
               >
                 <img
                   className="grayscale hover:grayscale-0 hover:scale-110 ease-in-out duration-300"

@@ -334,7 +334,7 @@ function Home() {
           </div>
           <div className="case-btm bg-[#191A23] rounded-[45px]  py-10 px-10 xl:py-12 xl:px-10 2xL:py-[70px] 2xl:px-14 text-white shadow-lg lg:shadow-none">
             <div className="flex flex-wrap text-center lg:text-left">
-              <div className=" pr-6 w-full md:w-1/2 pb-6 lg:pb-0 lg:w-1/3 xl:pr-8 2xl:pr-16">
+              <div className=" pr-6 w-full sm:w-1/2 pb-6 lg:pb-0 lg:w-1/3 xl:pr-8 2xl:pr-16">
                 <p>
                   For a local restaurant, we implemented a targeted PPC campaign
                   that resulted in a 50% increase in website traffic and a 25%
@@ -348,7 +348,7 @@ function Home() {
                   <img src={arrow3} alt="arrow-link" />
                 </a>
               </div>
-              <div className="border-l-2 lg:border-r-2 w-full md:w-1/2 lg:w-1/3 border-white pb-6 lg:pb-0 pl-6 lg:px-6 xl:px-9 2xl:px-16">
+              <div className="border-l-2 lg:border-r-2 w-full sm:w-1/2 lg:w-1/3 border-white pb-6 lg:pb-0 pl-6 lg:px-6 xl:px-9 2xl:px-16">
                 <p>
                   For a B2B software company, we developed an SEO strategy that
                   resulted in a first page ranking for key keywords and a 200%
@@ -419,7 +419,7 @@ function Home() {
             {teamCard.map((team, i) => {
               return (
                 <div
-                  className="team-card border-[1px] border-[#191A23] rounded-[45px] w-[calc(50%_-_5px)] lg:w-[calc(50%_-_15px)] xl:w-[calc(33.333%_-_15px)] 2xl:w-[calc(33.333%_-_20px)] py-8 px-7 xl:py-8 xl:px-7 2xl:py-10 2xL:px-9 common-shadow top-hover"
+                  className="team-card border-[1px] border-[#191A23] rounded-[45px] w-full lg:w-[calc(50%_-_15px)] xl:w-[calc(33.333%_-_15px)] 2xl:w-[calc(33.333%_-_20px)] py-8 px-7 xl:py-8 xl:px-7 2xl:py-10 2xL:px-9 common-shadow top-hover"
                   key={i}
                 >
                   <div className="top-card flex relative items-end border-b-[1px] border-black pb-7">
@@ -474,7 +474,7 @@ function Home() {
                       key={i}
                       className="pl-1 w-3/4 basis-3/4 sm:basis-3/4 sm:w-3/4 md:basis-3/4 md:w-3/4 lg:basis-3/4 lg:w-3/4 xl:basis-1/2 xl:w-1/2 cursor-grab"
                     >
-                      <div className="p-1">
+                      <div className="p-3 md:p-1">
                         <div className="message border-[1px] border-[#B9FF66] rounded-[45px] py-9 px-6 xl:py-10 xl:px-14 mb-2">
                           {testimony.testimony}
                         </div>
@@ -491,7 +491,7 @@ function Home() {
               </CarouselContent>
               <div className="testimonials-btns flex items-center justify-center pt-20 xl:pt-32">
                 <CarouselPrevious />
-                <div className="flex justify-center space-x-2 mx-32 lg:mx-56">
+                <div className="flex justify-center space-x-2 mx-10 md:mx-32 lg:mx-56">
                   {testimonialSLides.map((_, index) => (
                     <button
                       aria-label="dot"

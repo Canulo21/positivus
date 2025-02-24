@@ -170,25 +170,26 @@ input:-internal-autofill-selected {
 
 @media only screen and (min-width: 321px) {
   h1 {
-    font-size: 42px;
+    font-size: 38px;
+    line-height: 1.2;
   }
   h2 {
     font-size: 30px;
   }
   h3 {
     font-size: 25px;
+  }
+  .service-card-wrapper > .card {
+    width: 100%;
+  }
+
+  .masthead.gsticky,
+  .masthead {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    height: 5rem;
   }
 }
 @media only screen and (min-width: 640px) {
-  h1 {
-    font-size: 42px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 25px;
-  }
 }
 @media only screen and (min-width: 768px) {
   h1 {
@@ -221,6 +222,13 @@ input:-internal-autofill-selected {
   }
   h3 {
     font-size: 25px;
+  }
+
+  .service-card-wrapper > .card {
+    width: calc(50% - 1 * 20px);
+    box-shadow: 0 5px 0 0 #191a23;
+    position: relative;
+    top: 0;
   }
 }
 
