@@ -30,7 +30,7 @@ function Nav() {
         }`}
       >
         <div className="nav-holder flex items-center justify-between px-10 xl:px-12 2xl:px-[100px] w-full">
-          <a href="#" className=" logo flex gap-3">
+          <a href="#" className=" logo flex gap-3 items-center">
             <img src={logo} alt="logo" />
             <img src={logoText} alt="Positivus" />
           </a>

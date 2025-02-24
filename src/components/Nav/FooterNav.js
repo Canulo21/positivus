@@ -8,8 +8,8 @@ import twitter from "../../assets/images/twitter.png";
 
 function FooterNav() {
   return (
-    <div className="nav-holder flex items-center justify-between">
-      <a href="#" className="logo flex gap-3">
+    <div className="nav-holder flex items-center flex-wrap justify-between flex-col lg:flex-row gap-6 lg:gap-0">
+      <a href="#" className="logo flex gap-3 items-center">
         <img src={footerLogo} alt="logo" />
         <img src={footerLogoText} alt="Positivus" />
       </a>

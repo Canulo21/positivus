@@ -5,8 +5,8 @@ import CompanyLogo from "../CompanyLogo/CompanyLogo";
 function HeroBanner() {
   return (
     <>
-      <div className="hero-container flex flex-wrap items-center pb-[100px] xl:pb-[70px] py-[70px] mt-24 lg-mt-28 xl:mt-36 2xl:mt-36">
-        <div className="hero-left pr-8 lg:w-[60%] xl:w-[50%] 2xl:w-[42%]">
+      <div className="hero-container flex flex-wrap items-center py-[45px] px-[20px] lg:pb-[100px] xl:pb-[70px] lg:py-[70px] mt-24 mb-14 lg:mb-0 lg:mt-28 xl:mt-36 2xl:mt-36 rounded-[45px] lg:rounded-none shadow-lg lg:shadow-none bg-[#b9ff66] lg:bg-none">
+        <div className="hero-left pr-8 lg:w-[60%] xl:w-[50%] 2xl:w-[42%] text-center lg:text-left">
           <div className="hero-title">
             <h1 className="font-semibold">
               Navigating the digital landscape for success
@@ -20,13 +20,13 @@ function HeroBanner() {
             </p>
             <a
               href="#"
-              className="text-[20px] bg-[#191A23] rounded-[14px] text-white px-9 py-5 inline-block hover:bg-[#B9FF66] hover:text-[#191A23]"
+              className="text-[20px] bg-[#191A23] rounded-[14px] text-white px-9 py-5 inline-block hover:bg-[#fafafa] lg:hover:bg-[#B9FF66] hover:text-[#191A23]"
             >
               Book a consultation
             </a>
           </div>
         </div>
-        <div className="hero-right w-full flex justify-end lg:w-[40%] xl:w-[50%] 2xl:w-[58%]">
+        <div className="hero-right w-full lg:flex justify-end lg:w-[40%] xl:w-[50%] 2xl:w-[58%] hidden ">
           <img src={heroImg} alt="Illustration" />
         </div>
       </div>
