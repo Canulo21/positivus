@@ -188,8 +188,17 @@ input:-internal-autofill-selected {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     height: 5rem;
   }
+
+  .back-top.show {
+    bottom: 30px;
+    right: 15px;
+  }
 }
 @media only screen and (min-width: 640px) {
+  .back-top.show {
+    bottom: 30px;
+    right: 30px;
+  }
 }
 @media only screen and (min-width: 768px) {
   h1 {
@@ -229,6 +238,10 @@ input:-internal-autofill-selected {
     box-shadow: 0 5px 0 0 #191a23;
     position: relative;
     top: 0;
+  }
+
+  .masthead.gsticky {
+    height: 7rem;
   }
 }
 
