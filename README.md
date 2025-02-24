@@ -2,6 +2,8 @@
 
 # This is not fully responsive yet. Best view 1920px
 
+visit site here: https://positivus-jc.vercel.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
