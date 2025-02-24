@@ -273,3 +273,19 @@ input:-internal-autofill-selected {
     font-size: 1.25rem; /* 20px */
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .service-card-wrapper > .card {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+  .service-card-wrapper > .card .card-text br {
+    display: none;
+  }
+  .service-card-wrapper > .card .card-link {
+    padding-top: 2rem;
+  }
+  .service-card-wrapper > .card .card-link > a {
+    justify-content: center;
+  }
+}

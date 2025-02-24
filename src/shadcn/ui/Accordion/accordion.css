@@ -37,3 +37,16 @@
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (max-width: 530px) {
+  .accordion-btn button:after {
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+  }
+  .accordion-btn [data-state="open"] button:after {
+    font-size: 42px;
+    align-items: baseline;
+    line-height: 68%;
+  }
+}

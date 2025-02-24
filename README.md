@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-# This is not fully responsive yet. Best view 1920px
+# This is Fully Responsive
+
+# visit site here: <a href="https://positivus-jc.vercel.app/" target="_blank"> Postivus </a>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

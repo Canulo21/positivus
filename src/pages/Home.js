@@ -334,7 +334,7 @@ function Home() {
           </div>
           <div className="case-btm bg-[#191A23] rounded-[45px]  py-10 px-10 xl:py-12 xl:px-10 2xL:py-[70px] 2xl:px-14 text-white shadow-lg lg:shadow-none">
             <div className="flex flex-wrap text-center lg:text-left">
-              <div className=" pr-6 w-full sm:w-1/2 pb-6 lg:pb-0 lg:w-1/3 xl:pr-8 2xl:pr-16">
+              <div className=" pr-0 sm:pr-6 w-full sm:w-1/2 pb-6 lg:pb-0 lg:w-1/3 xl:pr-8 2xl:pr-16">
                 <p>
                   For a local restaurant, we implemented a targeted PPC campaign
                   that resulted in a 50% increase in website traffic and a 25%
@@ -348,7 +348,7 @@ function Home() {
                   <img src={arrow3} alt="arrow-link" />
                 </a>
               </div>
-              <div className="border-l-2 lg:border-r-2 w-full sm:w-1/2 lg:w-1/3 border-white pb-6 lg:pb-0 pl-6 lg:px-6 xl:px-9 2xl:px-16">
+              <div className="border-t-2 sm:border-t-0 border-l-0 sm:border-l-2 lg:border-r-2 w-full sm:w-1/2 lg:w-1/3 border-white pt-6 sm:pt-0 pb-6 lg:pb-0 pl-0 sm:pl-6 lg:px-6 xl:px-9 2xl:px-16">
                 <p>
                   For a B2B software company, we developed an SEO strategy that
                   resulted in a first page ranking for key keywords and a 200%
@@ -362,7 +362,7 @@ function Home() {
                   <img src={arrow3} alt="arrow-link" />
                 </a>
               </div>
-              <div className="pl-6 w-full border-t-2 pt-6 lg:pt-0 border-white lg:border-t-0 lg:w-1/3 xl:pl-8 2xl:pl-16">
+              <div className="pl-0 sm:pl-6 w-full border-t-2 pt-6 lg:pt-0 border-white lg:border-t-0 lg:w-1/3 xl:pl-8 2xl:pl-16">
                 <p>
                   For a national retail chain, we created a social media
                   marketing campaign that increased followers by 25% and
@@ -393,14 +393,16 @@ function Home() {
                 return (
                   <AccordionItem value={`item-${i}`} key={i} className="mb-8">
                     <AccordionTrigger>
-                      <span className=" w-14 text-3xl lg:w-20 lg:text-5xl xl:text-6xl xl:w-28">
+                      <span className=" w-10 sm:w-14 text-2xl sm:text-3xl lg:w-20 lg:text-5xl xl:text-6xl xl:w-28">
                         {process.number}
                       </span>
-                      <span className="text-2xl xl:text-3xl">
+                      <span className="text-xl sm:text-2xl xl:text-3xl">
                         {process.title}
                       </span>
                     </AccordionTrigger>
-                    <AccordionContent>{process.text}</AccordionContent>
+                    <AccordionContent className="text-base sm:text-lg">
+                      {process.text}
+                    </AccordionContent>
                   </AccordionItem>
                 );
               })}
