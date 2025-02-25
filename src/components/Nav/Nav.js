@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import logoText from "../../assets/images/Positivus.png";
-import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
+import HamburgerButton from "../HamburgerMenu/HamburgerButton";
 
-function Nav() {
+function Nav({ isOpen, setOpen }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -125,7 +125,7 @@ function Nav() {
             </ul>
           </div>
           <div className="hamburger-wrap inline-block xl:hidden">
-            <HamburgerMenu />
+            <HamburgerButton isOpen={isOpen} setOpen={setOpen} />
           </div>
         </div>
       </div>
