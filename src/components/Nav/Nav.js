@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import logoText from "../../assets/images/Positivus.png";
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -122,6 +123,9 @@ function Nav() {
                 </NavLink>
               </li>
             </ul>
+          </div>
+          <div className="hamburger-wrap inline-block xl:hidden">
+            <HamburgerMenu />
           </div>
         </div>
       </div>
