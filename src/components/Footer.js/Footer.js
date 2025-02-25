@@ -65,7 +65,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="all-rights-wrap border-white border-t-2 flex gap-5 lg:gap-10 items-center pt-7 flex-col lg:flex-row lg:pt-[50px]">
+            <div className="all-rights-wrap border-white border-t-2 flex gap-5 lg:gap-10 items-center pt-7 text-center sm:text-left flex-col sm:flex-row lg:pt-[50px]">
               <p>© 2023 Positivus. All Rights Reserved.</p>
               <a
                 href="#"

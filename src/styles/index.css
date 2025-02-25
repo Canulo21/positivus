@@ -181,6 +181,7 @@ input:-internal-autofill-selected {
   }
   .service-card-wrapper > .card {
     width: 100%;
+    text-align: center;
   }
 
   .masthead.gsticky,
@@ -192,6 +193,11 @@ input:-internal-autofill-selected {
   .back-top.show {
     bottom: 30px;
     right: 15px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .service-card-wrapper > .card {
+    text-align: left;
   }
 }
 @media only screen and (min-width: 640px) {
