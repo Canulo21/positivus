@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo-hamburger.png";
 import logoText from "../../assets/images/Positivus-hamburger.png";
+import menuData from "../../data/menuData.json";
 
 function HamburgerMenu() {
   return (
@@ -16,80 +17,22 @@ function HamburgerMenu() {
           <img src={logoText} alt="Positivus" />
         </a>
       </div>
+
       <div className="menu">
         <ul className="flex flex-col gap-4 items-center">
-          <li>
+          {menuData.map((menu, i) => (
             <NavLink
-              to="/"
+              key={i}
               className={({ isActive }) =>
-                `py-1 px-3 text-2xl hover:text-[#b9ff66]  ${
+                `py-1 px-3 text-2xl hover:text-[#b9ff66] capitalize ${
                   isActive ? "text-[#b9ff66]" : "text-white"
                 }`
               }
+              to={menu.link}
             >
-              Home
+              {menu.menuName}
             </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about-us"
-              className={({ isActive }) =>
-                `py-1 px-3 text-2xl hover:text-[#b9ff66]  ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              About Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                `py-1 px-3 text-2xl hover:text-[#b9ff66] ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/use-cases"
-              className={({ isActive }) =>
-                `py-1 px-3 text-2xl hover:text-[#b9ff66] ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              Use Cases
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/pricing"
-              className={({ isActive }) =>
-                `py-1 px-3 text-2xl hover:text-[#b9ff66]  ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              Pricing
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/blog"
-              className={({ isActive }) =>
-                `py-1 px-3 text-2xl hover:text-[#b9ff66]  ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              Blog
-            </NavLink>
-          </li>
+          ))}
         </ul>
       </div>
     </div>

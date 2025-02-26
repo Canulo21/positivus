@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import menuData from "../../data/menuData.json";
 import logo from "../../assets/images/logo.png";
 import logoText from "../../assets/images/Positivus.png";
 import HamburgerButton from "../HamburgerMenu/HamburgerButton";
@@ -38,78 +39,19 @@ function Nav({ isOpen, setOpen }) {
 
           <div className="menu hidden lg:hidden xl:block">
             <ul className="flex xl:gap-2 2xl:gap-10 items-center">
-              <li>
+              {menuData.map((menu, i) => (
                 <NavLink
-                  to="/"
+                  key={i}
+                  to={menu.link}
                   className={({ isActive }) =>
                     `py-1 px-3 text-[20px] text-black hover:bg-[#B9FF66] rounded-[10px] ${
                       isActive ? "bg-[#B9FF66]" : "bg-transparent"
                     }`
                   }
                 >
-                  Home
+                  {menu.menuName}
                 </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about-us"
-                  className={({ isActive }) =>
-                    `py-1 px-3 text-[20px] text-black hover:bg-[#B9FF66] rounded-[10px] ${
-                      isActive ? "bg-[#B9FF66]" : "bg-transparent"
-                    }`
-                  }
-                >
-                  About Us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/services"
-                  className={({ isActive }) =>
-                    `py-1 px-3 text-[20px] text-black hover:bg-[#B9FF66] rounded-[10px] ${
-                      isActive ? "bg-[#B9FF66]" : "bg-transparent"
-                    }`
-                  }
-                >
-                  Services
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/use-cases"
-                  className={({ isActive }) =>
-                    `py-1 px-3 text-[20px] text-black hover:bg-[#B9FF66] rounded-[10px] ${
-                      isActive ? "bg-[#B9FF66]" : "bg-transparent"
-                    }`
-                  }
-                >
-                  Use Cases
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/pricing"
-                  className={({ isActive }) =>
-                    `py-1 px-3 text-[20px] text-black hover:bg-[#B9FF66] rounded-[10px] ${
-                      isActive ? "bg-[#B9FF66]" : "bg-transparent"
-                    }`
-                  }
-                >
-                  Pricing
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/blog"
-                  className={({ isActive }) =>
-                    `py-1 px-3 text-[20px] text-black hover:bg-[#B9FF66] rounded-[10px] ${
-                      isActive ? "bg-[#B9FF66]" : "bg-transparent"
-                    }`
-                  }
-                >
-                  Blog
-                </NavLink>
-              </li>
+              ))}
               <li>
                 <NavLink
                   to="#"

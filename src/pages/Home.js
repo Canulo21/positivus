@@ -247,270 +247,268 @@ function Home() {
 
   return (
     <>
-      <section id="services">
-        <div className="service-wrap pt-20 lg:pt-24 xl:pt-36">
-          <div className="service-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
-            <h2 className="head-title">Services</h2>
-            <p>
-              At our digital marketing agency, we offer a range of services to{" "}
-              <br />
-              help businesses grow and succeed online. These services include:
-            </p>
-          </div>
-          <div className="service-card-wrapper flex flex-wrap gap-7 lg:gap-7 xl:gap-10">
-            {serviceCard.map((card, i) => {
-              return (
-                <div
-                  className="card border-black border-[1px] rounded-[45px] flex items-center justify-between p-9 lg:p-9 2xl:p-12"
-                  key={i}
-                  style={{ background: card.cardBg }}
-                >
-                  <div className="left-card">
-                    <div className="card-text">
-                      <h3
-                        style={{ background: card.textBg }}
-                        className="inline-block font-medium px-2 rounded-[7px]"
-                      >
-                        {card.title}
-                      </h3>
-                      <br />
-                      <h3
-                        style={{ background: card.textBg }}
-                        className="inline-block font-medium px-2 rounded-[7px]"
-                      >
-                        {card.text2}
-                      </h3>
-                    </div>
-                    <div className="card-link pt-24">
-                      <a
-                        href="#"
-                        className="flex items-center gap-4 text-xl"
-                        style={{ color: card.textIsWhite === 1 ? "white" : "" }}
-                      >
-                        <img src={card.arrow} alt="arrow-link" />
-                        Learn more
-                      </a>
-                    </div>
+      <div className="service-wrap pt-20 lg:pt-24 xl:pt-36">
+        <div className="service-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
+          <h2 className="head-title">Services</h2>
+          <p>
+            At our digital marketing agency, we offer a range of services to{" "}
+            <br />
+            help businesses grow and succeed online. These services include:
+          </p>
+        </div>
+        <div className="service-card-wrapper flex flex-wrap gap-7 lg:gap-7 xl:gap-10">
+          {serviceCard.map((card, i) => {
+            return (
+              <div
+                className="card border-black border-[1px] rounded-[45px] flex items-center justify-between p-9 lg:p-9 2xl:p-12"
+                key={i}
+                style={{ background: card.cardBg }}
+              >
+                <div className="left-card">
+                  <div className="card-text">
+                    <h3
+                      style={{ background: card.textBg }}
+                      className="inline-block font-medium px-2 rounded-[7px]"
+                    >
+                      {card.title}
+                    </h3>
+                    <br />
+                    <h3
+                      style={{ background: card.textBg }}
+                      className="inline-block font-medium px-2 rounded-[7px]"
+                    >
+                      {card.text2}
+                    </h3>
                   </div>
-                  <div className="right-card">
-                    <img src={card.mainImg} alt="image" />
+                  <div className="card-link pt-24">
+                    <a
+                      href="#"
+                      className="flex items-center gap-4 text-xl"
+                      style={{ color: card.textIsWhite === 1 ? "white" : "" }}
+                    >
+                      <img src={card.arrow} alt="arrow-link" />
+                      Learn more
+                    </a>
                   </div>
                 </div>
-              );
-            })}
+                <div className="right-card">
+                  <img src={card.mainImg} alt="image" />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="lets-wrap pt-24 pb-20 lg:pb-20 xl:pb-32">
+        <div className="bg-[#F3F3F3] rounded-[45px] relative flex items-center justify-between px-4 sm:px-9 p-9 pt-64 lg:pt-0 xl:p-14 shadow-lg lg:shadow-none">
+          <div className="left-lets pr-0 lg:pr-20 w-full text-center lg:text-left lg:w-[60%] 2xl:w-[40%] z-10">
+            <h3>Let’s make things happen</h3>
+            <p className="my-7">
+              Contact us today to learn more about how our digital marketing
+              services can help your business grow and succeed online.
+            </p>
+            <a
+              href="#"
+              className="rounded-[14px] bg-[#191A23] text-white py-5 px-9 inline-block text-[20px] hover:bg-[#B9FF66] hover:text-[#191A23]"
+            >
+              Get your free proposal
+            </a>
+          </div>
+          <div className="right-lets">
+            <img
+              src={lets}
+              alt="lets-img"
+              className="absolute top-0 left-0 lg:left-[initial] right-0 lg:right-10  2xl:right-60 bottom-72 lg:bottom-0 m-auto"
+            />
           </div>
         </div>
-        <div className="lets-wrap pt-24 pb-20 lg:pb-20 xl:pb-32">
-          <div className="bg-[#F3F3F3] rounded-[45px] relative flex items-center justify-between p-9 pt-64 lg:pt-0 xl:p-14 shadow-lg lg:shadow-none">
-            <div className="left-lets pr-0 lg:pr-20 w-full text-center lg:text-left lg:w-[60%] 2xl:w-[40%] z-10">
-              <h3>Let’s make things happen</h3>
-              <p className="my-7">
-                Contact us today to learn more about how our digital marketing
-                services can help your business grow and succeed online.
+      </div>
+      <div className="case-wrap pb-20 lg:pb-20 xl:pb-32">
+        <div className="case-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
+          <h2 className="head-title">Case Studies</h2>
+          <p>
+            Explore Real-Life Examples of Our Proven Digital Marketing <br />{" "}
+            Success through Our Case Studies
+          </p>
+        </div>
+        <div className="case-btm bg-[#191A23] rounded-[45px]  py-10 px-10 xl:py-12 xl:px-10 2xL:py-[70px] 2xl:px-14 text-white shadow-lg lg:shadow-none">
+          <div className="flex flex-wrap text-center lg:text-left">
+            <div className=" pr-0 sm:pr-6 w-full sm:w-1/2 pb-6 lg:pb-0 lg:w-1/3 xl:pr-8 2xl:pr-16">
+              <p>
+                For a local restaurant, we implemented a targeted PPC campaign
+                that resulted in a 50% increase in website traffic and a 25%
+                increase in sales.
               </p>
               <a
                 href="#"
-                className="rounded-[14px] bg-[#191A23] text-white py-5 px-9 inline-block text-[20px] hover:bg-[#B9FF66] hover:text-[#191A23]"
+                className="text-xl text-[#B9FF66] mt-5 flex items-center gap-5 justify-center lg:w-fit arrow-3"
               >
-                Get your free proposal
+                Learn more
+                <img src={arrow3} alt="arrow-link" />
               </a>
             </div>
-            <div className="right-lets">
-              <img
-                src={lets}
-                alt="lets-img"
-                className="absolute top-0 left-0 lg:left-[initial] right-0 lg:right-10  2xl:right-60 bottom-72 lg:bottom-0 m-auto"
-              />
+            <div className="border-t-2 sm:border-t-0 border-l-0 sm:border-l-2 lg:border-r-2 w-full sm:w-1/2 lg:w-1/3 border-white pt-6 sm:pt-0 pb-6 lg:pb-0 pl-0 sm:pl-6 lg:px-6 xl:px-9 2xl:px-16">
+              <p>
+                For a B2B software company, we developed an SEO strategy that
+                resulted in a first page ranking for key keywords and a 200%
+                increase in organic traffic.
+              </p>
+              <a
+                href="#"
+                className="text-xl text-[#B9FF66] mt-5 flex items-center gap-5 justify-center lg:w-fit arrow-3"
+              >
+                Learn more
+                <img src={arrow3} alt="arrow-link" />
+              </a>
+            </div>
+            <div className="pl-0 sm:pl-6 w-full border-t-2 pt-6 lg:pt-0 border-white lg:border-t-0 lg:w-1/3 xl:pl-8 2xl:pl-16">
+              <p>
+                For a national retail chain, we created a social media marketing
+                campaign that increased followers by 25% and generated a 20%
+                increase in online sales.
+              </p>
+              <a
+                href="#"
+                className="text-xl text-[#B9FF66] mt-5 flex items-center gap-5 justify-center lg:w-fit arrow-3"
+              >
+                Learn more
+                <img src={arrow3} alt="arrow-link" />
+              </a>
             </div>
           </div>
         </div>
-        <div className="case-wrap pb-20 lg:pb-20 xl:pb-32">
-          <div className="case-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
-            <h2 className="head-title">Case Studies</h2>
-            <p>
-              Explore Real-Life Examples of Our Proven Digital Marketing <br />{" "}
-              Success through Our Case Studies
-            </p>
-          </div>
-          <div className="case-btm bg-[#191A23] rounded-[45px]  py-10 px-10 xl:py-12 xl:px-10 2xL:py-[70px] 2xl:px-14 text-white shadow-lg lg:shadow-none">
-            <div className="flex flex-wrap text-center lg:text-left">
-              <div className=" pr-0 sm:pr-6 w-full sm:w-1/2 pb-6 lg:pb-0 lg:w-1/3 xl:pr-8 2xl:pr-16">
-                <p>
-                  For a local restaurant, we implemented a targeted PPC campaign
-                  that resulted in a 50% increase in website traffic and a 25%
-                  increase in sales.
-                </p>
-                <a
-                  href="#"
-                  className="text-xl text-[#B9FF66] mt-5 flex items-center gap-5 justify-center lg:w-fit arrow-3"
-                >
-                  Learn more
-                  <img src={arrow3} alt="arrow-link" />
-                </a>
-              </div>
-              <div className="border-t-2 sm:border-t-0 border-l-0 sm:border-l-2 lg:border-r-2 w-full sm:w-1/2 lg:w-1/3 border-white pt-6 sm:pt-0 pb-6 lg:pb-0 pl-0 sm:pl-6 lg:px-6 xl:px-9 2xl:px-16">
-                <p>
-                  For a B2B software company, we developed an SEO strategy that
-                  resulted in a first page ranking for key keywords and a 200%
-                  increase in organic traffic.
-                </p>
-                <a
-                  href="#"
-                  className="text-xl text-[#B9FF66] mt-5 flex items-center gap-5 justify-center lg:w-fit arrow-3"
-                >
-                  Learn more
-                  <img src={arrow3} alt="arrow-link" />
-                </a>
-              </div>
-              <div className="pl-0 sm:pl-6 w-full border-t-2 pt-6 lg:pt-0 border-white lg:border-t-0 lg:w-1/3 xl:pl-8 2xl:pl-16">
-                <p>
-                  For a national retail chain, we created a social media
-                  marketing campaign that increased followers by 25% and
-                  generated a 20% increase in online sales.
-                </p>
-                <a
-                  href="#"
-                  className="text-xl text-[#B9FF66] mt-5 flex items-center gap-5 justify-center lg:w-fit arrow-3"
-                >
-                  Learn more
-                  <img src={arrow3} alt="arrow-link" />
-                </a>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div className="working-process-wrap pb-14 xl:pb-28">
+        <div className="working-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
+          <h2 className="head-title">Our Working Process </h2>
+          <p>
+            Step-by-Step Guide to Achieving <br />
+            Your Business Goals
+          </p>
         </div>
-        <div className="working-process-wrap pb-14 xl:pb-28">
-          <div className="working-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
-            <h2 className="head-title">Our Working Process </h2>
-            <p>
-              Step-by-Step Guide to Achieving <br />
-              Your Business Goals
-            </p>
-          </div>
-          <div className="accordion-wrap">
-            <Accordion type="single" collapsible>
-              {accordion_working_process.map((process, i) => {
-                return (
-                  <AccordionItem value={`item-${i}`} key={i} className="mb-8">
-                    <AccordionTrigger>
-                      <span className=" w-10 sm:w-14 text-2xl sm:text-3xl lg:w-20 lg:text-5xl xl:text-6xl xl:w-28">
-                        {process.number}
-                      </span>
-                      <span className="text-xl sm:text-2xl xl:text-3xl">
-                        {process.title}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-base sm:text-lg">
-                      {process.text}
-                    </AccordionContent>
-                  </AccordionItem>
-                );
-              })}
-            </Accordion>
-          </div>
-        </div>
-        <div className="team-wrap pb-20 xl:pb-28">
-          <div className="team-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
-            <h2 className="head-title">Team</h2>
-            <p>
-              Meet the skilled and experienced team behind our <br />
-              successful digital marketing strategies
-            </p>
-          </div>
-          <div className="team-card-holder flex flex-wrap justify-between gap-y-6 xl:gap-y-6 2xl:gap-y-10">
-            {teamCard.map((team, i) => {
+        <div className="accordion-wrap">
+          <Accordion type="single" collapsible>
+            {accordion_working_process.map((process, i) => {
               return (
-                <div
-                  className="team-card border-[1px] border-[#191A23] rounded-[45px] w-full lg:w-[calc(50%_-_15px)] xl:w-[calc(33.333%_-_15px)] 2xl:w-[calc(33.333%_-_20px)] py-8 px-7 xl:py-8 xl:px-7 2xl:py-10 2xL:px-9 common-shadow top-hover"
-                  key={i}
-                >
-                  <div className="top-card flex relative items-end border-b-[1px] border-black pb-7">
-                    <div className="card-img mr-5">
-                      <img
-                        className="hover:scale-90 transition-all duration-300"
-                        src={team.img}
-                        alt={team.name}
-                      />
-                    </div>
-                    <div className="card-name">
-                      <h4 className="font-semibold">{team.name}</h4>
-                      <p>{team.position}</p>
-                    </div>
-                    <div className="absolute right-0 top-0">
-                      <a
-                        className="inline-block"
-                        href={team.linkInUrl}
-                        target="_blank"
-                      >
-                        <img src={linkIn} alt="LinkIn" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="btm-card pt-7">{team.description}</div>
-                </div>
+                <AccordionItem value={`item-${i}`} key={i} className="mb-8">
+                  <AccordionTrigger>
+                    <span className=" w-10 sm:w-14 text-2xl sm:text-3xl lg:w-20 lg:text-5xl xl:text-6xl xl:w-28">
+                      {process.number}
+                    </span>
+                    <span className="text-xl sm:text-2xl xl:text-3xl">
+                      {process.title}
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base sm:text-lg">
+                    {process.text}
+                  </AccordionContent>
+                </AccordionItem>
               );
             })}
-          </div>
+          </Accordion>
         </div>
-        <div className="testimonials-wrap">
-          <div className="working-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
-            <h2 className="head-title">Testimonials</h2>
-            <p>
-              Hear from Our Satisfied Clients: Read Our Testimonials <br />
-              to Learn More about Our Digital Marketing Services
-            </p>
-          </div>
-          <div className="slides bg-[#191A23] pt-20 pb-16 text-white rounded-[45px] overflow-hidden">
-            <Carousel
-              setApi={setApi} // Pass the Carousel API to the state
-              opts={{ loop: true }}
-              plugins={[plugin.current]}
-              onMouseEnter={plugin.current.stop}
-              onMouseLeave={plugin.current.play}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-1">
-                {testimonialSLides.map((testimony, i) => {
-                  return (
-                    <CarouselItem
-                      key={i}
-                      className="pl-1 w-3/4 basis-3/4 sm:basis-3/4 sm:w-3/4 md:basis-3/4 md:w-3/4 lg:basis-3/4 lg:w-3/4 xl:basis-1/2 xl:w-1/2 cursor-grab"
-                    >
-                      <div className="p-3 md:p-1">
-                        <div className="message border-[1px] border-[#B9FF66] rounded-[45px] py-9 px-6 xl:py-10 xl:px-14 mb-2">
-                          {testimony.testimony}
-                        </div>
-                      </div>
-                      <div className="person pt-8 pl-20">
-                        <h4 className="text-[#B9FF66] font-semibold">
-                          {testimony.name}
-                        </h4>
-                        <p>{testimony.position}</p>
-                      </div>
-                    </CarouselItem>
-                  );
-                })}
-              </CarouselContent>
-              <div className="testimonials-btns flex items-center justify-center pt-20 xl:pt-32">
-                <CarouselPrevious />
-                <div className="flex justify-center space-x-2 mx-10 md:mx-32 lg:mx-56">
-                  {testimonialSLides.map((_, index) => (
-                    <button
-                      aria-label="dot"
-                      key={index}
-                      onClick={() => goToSlide(index)}
-                      className={`w-3 h-3 rounded-full transition-colors dots ${
-                        currentIndex === index ? "active" : " "
-                      }`}
+      </div>
+      <div className="team-wrap pb-20 xl:pb-28">
+        <div className="team-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
+          <h2 className="head-title">Team</h2>
+          <p>
+            Meet the skilled and experienced team behind our <br />
+            successful digital marketing strategies
+          </p>
+        </div>
+        <div className="team-card-holder flex flex-wrap justify-between gap-y-6 xl:gap-y-6 2xl:gap-y-10">
+          {teamCard.map((team, i) => {
+            return (
+              <div
+                className="team-card border-[1px] border-[#191A23] rounded-[45px] w-full lg:w-[calc(50%_-_15px)] xl:w-[calc(33.333%_-_15px)] 2xl:w-[calc(33.333%_-_20px)] py-8 px-7 xl:py-8 xl:px-7 2xl:py-10 2xL:px-9 common-shadow top-hover"
+                key={i}
+              >
+                <div className="top-card flex relative items-end border-b-[1px] border-black pb-7">
+                  <div className="card-img mr-5">
+                    <img
+                      className="hover:scale-90 transition-all duration-300"
+                      src={team.img}
+                      alt={team.name}
                     />
-                  ))}
+                  </div>
+                  <div className="card-name">
+                    <h4 className="font-semibold">{team.name}</h4>
+                    <p>{team.position}</p>
+                  </div>
+                  <div className="absolute right-0 top-0">
+                    <a
+                      className="inline-block"
+                      href={team.linkInUrl}
+                      target="_blank"
+                    >
+                      <img src={linkIn} alt="LinkIn" />
+                    </a>
+                  </div>
                 </div>
-                <CarouselNext />
+                <div className="btm-card pt-7">{team.description}</div>
               </div>
-            </Carousel>
-          </div>
+            );
+          })}
         </div>
-      </section>
+      </div>
+      <div className="testimonials-wrap">
+        <div className="working-top flex items-center text-center lg:text-left flex-col lg:flex-row gap-5 lg:gap-10 pb-12 lg:pb-14 xl:pb-20">
+          <h2 className="head-title">Testimonials</h2>
+          <p>
+            Hear from Our Satisfied Clients: Read Our Testimonials <br />
+            to Learn More about Our Digital Marketing Services
+          </p>
+        </div>
+        <div className="slides bg-[#191A23] pt-12 sm:pt-20 pb-14 sm:pb-16 text-white rounded-[45px] overflow-hidden">
+          <Carousel
+            setApi={setApi} // Pass the Carousel API to the state
+            opts={{ loop: true }}
+            plugins={[plugin.current]}
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.play}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-1">
+              {testimonialSLides.map((testimony, i) => {
+                return (
+                  <CarouselItem
+                    key={i}
+                    className="pl-1 w-3/4 basis-3/4 sm:basis-3/4 sm:w-3/4 md:basis-3/4 md:w-3/4 lg:basis-3/4 lg:w-3/4 xl:basis-1/2 xl:w-1/2 cursor-grab"
+                  >
+                    <div className="p-3 md:p-1">
+                      <div className="message border-[1px] border-[#B9FF66] rounded-[45px] py-9 px-6 xl:py-10 xl:px-14 mb-2">
+                        {testimony.testimony}
+                      </div>
+                    </div>
+                    <div className="person pt-8 sm:pl-20 text-center sm:text-left">
+                      <h4 className="text-[#B9FF66] font-semibold">
+                        {testimony.name}
+                      </h4>
+                      <p>{testimony.position}</p>
+                    </div>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+            <div className="testimonials-btns flex items-center justify-center pt-10 sm:pt-20 xl:pt-32">
+              <CarouselPrevious />
+              <div className="flex justify-center space-x-2 mx-10 md:mx-32 lg:mx-56">
+                {testimonialSLides.map((_, index) => (
+                  <button
+                    aria-label="dot"
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-3 h-3 rounded-full transition-colors dots ${
+                      currentIndex === index ? "active" : " "
+                    }`}
+                  />
+                ))}
+              </div>
+              <CarouselNext />
+            </div>
+          </Carousel>
+        </div>
+      </div>
     </>
   );
 }

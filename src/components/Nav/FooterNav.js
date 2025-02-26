@@ -1,4 +1,5 @@
 import React from "react";
+import menuData from "../../data/menuData.json";
 import { NavLink } from "react-router-dom";
 import footerLogo from "../../assets/images/footer-logo.png";
 import footerLogoText from "../../assets/images/footer-Positivus.png";
@@ -15,78 +16,19 @@ function FooterNav() {
       </a>
       <div className="menu">
         <ul className="flex flex-col lg:flex-row gap-2 xl:gap-2 2xl:gap-10 items-center">
-          <li>
+          {menuData.map((menu, i) => (
             <NavLink
-              to="/"
+              key={i}
               className={({ isActive }) =>
-                `py-1 px-3 underline underline-offset-4 hover:text-[#b9ff66]  ${
+                `py-1 px-3 underline underline-offset-4 capitalize hover:text-[#b9ff66]  ${
                   isActive ? "text-[#b9ff66]" : "text-white"
                 }`
               }
+              to={menu.link}
             >
-              Home
+              {menu.menuName}
             </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about-us"
-              className={({ isActive }) =>
-                `py-1 px-3 underline underline-offset-4 hover:text-[#b9ff66]  ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              About Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                `py-1 px-3 underline underline-offset-4 hover:text-[#b9ff66] ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/use-cases"
-              className={({ isActive }) =>
-                `py-1 px-3 underline underline-offset-4 hover:text-[#b9ff66] ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              Use Cases
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/pricing"
-              className={({ isActive }) =>
-                `py-1 px-3 underline underline-offset-4 hover:text-[#b9ff66]  ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              Pricing
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/blog"
-              className={({ isActive }) =>
-                `py-1 px-3 underline underline-offset-4 hover:text-[#b9ff66]  ${
-                  isActive ? "text-[#b9ff66]" : "text-white"
-                }`
-              }
-            >
-              Blog
-            </NavLink>
-          </li>
+          ))}
         </ul>
       </div>
       <div className="nav-social flex gap-5">

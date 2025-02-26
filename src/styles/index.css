@@ -280,6 +280,19 @@ input:-internal-autofill-selected {
   }
 }
 
+@media only screen and (max-width: 640px) {
+  .logo-indi {
+    flex-basis: 50% !important;
+    width: 50% !important;
+  }
+
+  .testimonials-wrap .message::before {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .service-card-wrapper > .card {
     flex-direction: column-reverse;
