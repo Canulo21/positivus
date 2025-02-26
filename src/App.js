@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <div
-        className={`site-holder bg-[#ffffff] z-10 float-right relative w-full transition-all duration-300 ease-in-out ${
+        className={`site-holder bg-[#ffffff] z-10 float-right relative w-full transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? "is-active right-64 sm:right-80" : "right-0"
         }`}
       >

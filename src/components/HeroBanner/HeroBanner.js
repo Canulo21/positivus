@@ -7,7 +7,7 @@ import CompanyLogo from "../CompanyLogo/CompanyLogo";
 function HeroBanner() {
   return (
     <>
-      <div className="hero-container flex flex-wrap items-center py-[45px]  lg:pb-[100px] xl:pb-[70px] lg:py-[70px] mt-24 mb-14 lg:mb-0 lg:mt-28 xl:mt-36 2xl:mt-36 rounded-[45px] lg:rounded-none shadow-lg lg:shadow-none bg-[#b9ff66] lg:bg-inherit">
+      <div className="hero-container flex flex-wrap items-center py-[45px] px-5 md:px-10 lg:pb-[100px] xl:pb-[70px] lg:py-[70px] mt-24 mb-14 lg:mb-0 lg:mt-28 xl:mt-36 2xl:mt-36 rounded-[45px] lg:rounded-none shadow-lg lg:shadow-none bg-[#b9ff66] lg:bg-inherit">
         <div className="hero-left lg:pr-8 lg:w-[60%] xl:w-[50%] 2xl:w-[42%] text-center lg:text-left">
           <div className="hero-title">
             <motion.h1
