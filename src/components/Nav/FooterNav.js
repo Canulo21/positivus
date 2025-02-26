@@ -1,5 +1,5 @@
 import React from "react";
-import menuData from "../../data/menuData.json";
+import { listMenu } from "./CallMenu";
 import { NavLink } from "react-router-dom";
 import footerLogo from "../../assets/images/footer-logo.png";
 import footerLogoText from "../../assets/images/footer-Positivus.png";
@@ -16,7 +16,7 @@ function FooterNav() {
       </a>
       <div className="menu">
         <ul className="flex flex-col lg:flex-row gap-2 xl:gap-2 2xl:gap-10 items-center">
-          {menuData.map((menu, i) => (
+          {listMenu.map((menu, i) => (
             <NavLink
               key={i}
               className={({ isActive }) =>

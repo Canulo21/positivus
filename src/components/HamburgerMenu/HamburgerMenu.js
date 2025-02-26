@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo-hamburger.png";
 import logoText from "../../assets/images/Positivus-hamburger.png";
-import menuData from "../../data/menuData.json";
+import { listMenu } from "../Nav/CallMenu";
 
 function HamburgerMenu() {
   return (
@@ -19,7 +19,7 @@ function HamburgerMenu() {
       </div>
       <div className="menu">
         <ul className="flex flex-col gap-4 items-center">
-          {menuData.map((menu, i) => (
+          {listMenu.map((menu, i) => (
             <NavLink
               key={i}
               className={({ isActive }) =>

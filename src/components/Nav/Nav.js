@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import menuData from "../../data/menuData.json";
+import { listMenu } from "../Nav/CallMenu";
 import logo from "../../assets/images/logo.png";
 import logoText from "../../assets/images/Positivus.png";
 import HamburgerButton from "../HamburgerMenu/HamburgerButton";
@@ -39,7 +39,7 @@ function Nav({ isOpen, setOpen }) {
 
           <div className="menu hidden lg:hidden xl:block">
             <ul className="flex xl:gap-2 2xl:gap-10 items-center">
-              {menuData.map((menu, i) => (
+              {listMenu.map((menu, i) => (
                 <NavLink
                   key={i}
                   to={menu.link}
