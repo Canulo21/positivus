@@ -44,7 +44,7 @@ function Nav({ isOpen, setOpen }) {
                   key={i}
                   to={menu.link}
                   className={({ isActive }) =>
-                    `py-1 px-3 text-[20px] text-black hover:bg-[#B9FF66] rounded-[10px] ${
+                    `py-1 px-3 capitalize text-[20px] text-black hover:bg-[#B9FF66] rounded-[10px] ${
                       isActive ? "bg-[#B9FF66]" : "bg-transparent"
                     }`
                   }

@@ -17,7 +17,6 @@ function HamburgerMenu() {
           <img src={logoText} alt="Positivus" />
         </a>
       </div>
-
       <div className="menu">
         <ul className="flex flex-col gap-4 items-center">
           {menuData.map((menu, i) => (

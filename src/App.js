@@ -4,10 +4,29 @@ import HeroBanner from "./components/HeroBanner/HeroBanner";
 import Nav from "./components/Nav/Nav";
 import Home from "./pages/Home";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [isOpen, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1280) {
+        setOpen(false);
+      }
+    };
+
+    // Initial check on component mount
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="App">

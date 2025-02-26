@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 import Autoplay from "embla-carousel-autoplay";
 import {
@@ -75,7 +77,13 @@ function CompanyLogo() {
   );
 
   return (
-    <div className="company-logo-wrap overflow-hidden whitespace-nowrap">
+    <motion.div
+      className="company-logo-wrap overflow-hidden whitespace-nowrap"
+      variants={fadeIn("up", 0.9)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <div className="logo-carousel">
         <Carousel
           opts={{ loop: true }}
@@ -100,7 +108,7 @@ function CompanyLogo() {
           </CarouselContent>
         </Carousel>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
