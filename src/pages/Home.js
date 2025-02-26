@@ -279,7 +279,7 @@ function Home() {
                 className="card border-black border-[1px] rounded-[45px] flex items-center justify-between p-9 lg:p-9 2xl:p-12"
                 key={i}
                 style={{ background: card.cardBg }}
-                variants={fadeIn("up", 0.4 * (i + 0.1))}
+                variants={fadeIn("up", 0.2 * (i + 0.1))}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.3 }}
@@ -340,19 +340,17 @@ function Home() {
               Get your free proposal
             </a>
           </motion.div>
-          <motion.div
-            className="right-lets"
-            variants={fadeIn("left", 0.4)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <img
+          <div className="right-lets">
+            <motion.img
               src={lets}
               alt="lets-img"
               className="absolute top-0 left-0 lg:left-[initial] right-0 lg:right-10  2xl:right-60 bottom-72 lg:bottom-0 m-auto"
+              variants={fadeIn("left", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.3 }}
             />
-          </motion.div>
+          </div>
         </div>
       </div>
       <div className="case-wrap pb-20 lg:pb-20 xl:pb-32">
@@ -467,7 +465,7 @@ function Home() {
             {accordion_working_process.map((process, i) => {
               return (
                 <motion.div
-                  variants={fadeIn("up", 0.4 * (i + 0.1))}
+                  variants={fadeIn("up", 0.2 * (i + 0.1))}
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: true, amount: 0.3 }}
@@ -518,7 +516,7 @@ function Home() {
               <motion.div
                 className="team-card border-[1px] border-[#191A23] rounded-[45px] w-full lg:w-[calc(50%_-_15px)] xl:w-[calc(33.333%_-_15px)] 2xl:w-[calc(33.333%_-_20px)] py-8 px-7 xl:py-8 xl:px-7 2xl:py-10 2xL:px-9 common-shadow top-hover"
                 key={i}
-                variants={fadeIn("up", 0.4 * (i + 0.1))}
+                variants={fadeIn("up", 0.2 * (i + 0.1))}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.3 }}
